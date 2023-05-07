@@ -639,7 +639,7 @@ const Home = (props: HomeProps) => {
             display="block"
             style={{ marginTop: 7, color: "grey" }}
           >
-            No Worries NFT - STAGE
+            No Worries NFT by Sem Nóia
           </Typography>
         </Paper>
       </Container>
