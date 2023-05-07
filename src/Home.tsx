@@ -37,7 +37,7 @@ const ConnectButton = styled(WalletDialogButton)`
   height: 60px;
   margin-top: 10px;
   margin-bottom: 5px;
-  background: linear-gradient(180deg, #604ae5 0%, #813eee 100%);
+  background: linear-gradient(180deg, #e5854a 0%, #ffbe8a 100%);
   color: white;
   font-size: 16px;
   font-weight: bold;
@@ -466,7 +466,13 @@ const Home = (props: HomeProps) => {
   }, [refreshCandyMachineState]);
 
   return (
-    <Container style={{ marginTop: 100 }}>
+    <Container style={{ 
+      position: "absolute",
+      top: "45%",
+      left: "50%",
+      transform: "translate(-50%, -50%)",
+      marginTop: 50, 
+      }}>
       <Container maxWidth="xs" style={{ position: "relative" }}>
         <Paper
           style={{
@@ -487,7 +493,7 @@ const Home = (props: HomeProps) => {
                 }
               }}
             >
-              Connect Wallet
+              Conectar Carteira
             </ConnectButton>
           ) : (
             <>
@@ -500,7 +506,7 @@ const Home = (props: HomeProps) => {
                 >
                   <Grid item xs={3}>
                     <Typography variant="body2" color="textSecondary">
-                      Remaining
+                      Restantes
                     </Typography>
                     <Typography
                       variant="h6"
@@ -515,8 +521,8 @@ const Home = (props: HomeProps) => {
                   <Grid item xs={4}>
                     <Typography variant="body2" color="textSecondary">
                       {isWhitelistUser && discountPrice
-                        ? "Discount Price"
-                        : "Price"}
+                        ? "Preço c/ desconto"
+                        : "Preço"}
                     </Typography>
                     <Typography
                       variant="h6"
@@ -633,7 +639,7 @@ const Home = (props: HomeProps) => {
             display="block"
             style={{ marginTop: 7, color: "grey" }}
           >
-            Powered by METAPLEX
+            No Worries NFT - STAGE
           </Typography>
         </Paper>
       </Container>
